@@ -96,7 +96,7 @@ export default function Inicio() {
           </div>
           <div className="hero-video">
             <video autoPlay muted loop playsInline className="w-full h-auto">
-              <source src="/videos/Proyecto de vídeo 2.mp4" type="video/mp4" />
+              <source src="/videos/Proyecto de vídeo 5.mp4" type="video/mp4" />
               Tu navegador no soporta video HTML5
             </video>
           </div>
