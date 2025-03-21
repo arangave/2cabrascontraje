@@ -91,12 +91,12 @@ export default function Inicio() {
           <div className="hero-text">
             <h2>Descubre el estilo de 2CabrasConTraje</h2>
             <p>Moda exclusiva para quienes buscan algo único.</p>
-            <p className="highlight">&quot;Rompe con la uniformidad o ponle los cuernos&quot;</p>
+            <p className="highlight">&quot;Rompe con la norma o ponle los cuernos&quot;</p>
             <a href="#" className="btn">Ver Colección</a>
           </div>
           <div className="hero-video">
             <video autoPlay muted loop playsInline className="w-full h-auto">
-              <source src="/videos/Proyecto de vídeo 5.mp4" type="video/mp4" />
+              <source src="/videos/Proyecto de vídeo 7.mp4" type="video/mp4" />
               Tu navegador no soporta video HTML5
             </video>
           </div>

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 /* ESTILOS GENERALES */
 body {
     background-color: #f8e5c7;
@@ -32,7 +33,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 /* LOGOTIPO */
@@ -40,75 +41,85 @@ body {
     height: 48px;
 }
 
-/* SECCIÓN HÉROE */
+/* SECCIÓN HÉROE (PANTALLA DIVIDIDA) */
 .hero {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F8E8D0;
+    background-color: #000000;
     padding: 60px 20px;
+    min-height: 100vh;
 }
 
+/* HERO CONTENIDO - Pantalla Dividida */
 .hero-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    max-width: 1000px;
+    text-align: center;
+    max-width: 1200px;
     width: 100%;
     gap: 40px;
 }
 
+/* HERO TEXTO */
 .hero-text {
+    flex: 1;
     max-width: 500px;
 }
 
 .hero h2 {
     font-size: 48px;
     font-weight: bold;
-    color: #1A1A1A;
+    color: #ffffff;
 }
 
 .hero p {
     font-size: 18px;
-    color: gray;
+    color: rgb(255, 255, 255);
     margin-top: 8px;
 }
 
 .hero .highlight {
     font-size: 24px;
-    color: #a62511;
+    color: #ffffff;
     font-weight: bold;
     margin-top: 12px;
 }
 
-/* VIDEO HÉROE */
+/* HERO VIDEO */
 .hero-video {
-    height: 100%;
+    flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .hero-video video {
-    height: 100%;
-    width: auto;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
     border-radius: 24px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-    max-width: 100%;
 }
 
-/* RESPONSIVO */
-@media (max-width: 768px) {
+/* PANTALLAS GRANDES (PANTALLA DIVIDIDA) */
+@media (min-width: 768px) {
     .hero-content {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .hero-text {
+        max-width: 50%;
     }
 
     .hero-video {
-        width: 100%;
-    }
-
-    .hero-video video {
-        width: 100%;
+        max-width: 50%;
         height: auto;
     }
 }
@@ -117,7 +128,7 @@ body {
 .btn {
     display: inline-block;
     background-color: #FFD700;
-    color: black;
+    color: rgb(2, 2, 2);
     padding: 12px 24px;
     border-radius: 24px;
     font-size: 18px;
@@ -128,14 +139,14 @@ body {
 
 .btn:hover {
     background-color: rgb(0, 0, 0);
-    color: rgb(234, 208, 12);
+    color: rgb(255, 255, 255);
 }
 
 /* PRODUCTOS DESTACADOS */
 .products {
     text-align: center;
     padding: 60px 20px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
 }
 
 .product-grid {
@@ -173,7 +184,7 @@ body {
 
 /* PIE DE PÁGINA */
 footer {
-    background-color: #1A1A1A;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 20px;
